@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>KetchUp! Estudio | El ingrediente secreto</title>
+  <link rel="icon" type="image/png" href="assets/brand/icono-rojo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800;900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo-link" href="#inicio" aria-label="KetchUp! Estudio, inicio">
+      <img class="brand-logo" src="assets/brand/logo-principal.png" alt="KetchUp! Estudio">
+    </a>
+    <nav aria-label="Principal">
+      <a href="#nosotros">Quiénes somos</a>
+      <a href="#servicios">Qué hacemos</a>
+      <a href="#equipo">El equipo</a>
+      <a href="#identidad">Misión y valores</a>
+      <button type="button" class="btn sm open-contact">¡Hablemos!</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- INICIO / HERO -->
+  <section class="hero" id="inicio">
+    <div class="wrap">
+      <div>
+        <span class="slogan-pill">El ingrediente secreto</span>
+        <h1>
+          <span><i>Hacemos que tu</i></span>
+          <span><i>marca no sepa a lo</i></span>
+          <span><i>mismo de siempre.</i></span>
+        </h1>
+        <p class="lead">Agencia de publicidad y creatividad 360° en Valencia, Carabobo. Estrategia, dirección de arte y ejecución integral en un solo equipo.</p>
+        <div class="hero-actions">
+          <button type="button" class="btn open-contact">¡Ponle salsa a mi negocio!</button>
+          <a class="btn-ghost" href="#servicios">Explorar servicios</a>
+        </div>
+      </div>
+
+      <div class="stage" aria-hidden="true">
+        <div class="card c1">
+          <img src="assets/brand/icono-blanco.png" alt="">
+        </div>
+        <div class="card c2">
+          <svg class="stamp" id="stamp" viewBox="0 0 200 200">
+            <defs>
+              <path id="ring" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"/>
+            </defs>
+            <text>
+              <textPath href="#ring">EL INGREDIENTE SECRETO · EL INGREDIENTE SECRETO · </textPath>
+            </text>
+          </svg>
+          <img class="stamp-icon" src="assets/brand/icono-rojo.png" alt="">
+        </div>
+        <div class="card c3">
+          <img src="assets/brand/logo-principal.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIÉNES SOMOS -->
+  <section class="about" id="nosotros">
+    <div class="wrap">
+      <div class="rv">
+        <p class="k">Quiénes somos</p>
+        <h2>El ingrediente secreto que toda marca necesita.</h2>
+        <blockquote>Ser recordados como el estudio creativo que hace irresistible a tu marca.</blockquote>
+      </div>
+      <div class="rv">
+        <p>Aplicamos <strong>«El ingrediente secreto»</strong> para ayudar a las organizaciones a destacar. Unimos visión estratégica de negocio, dirección de arte de autor y ejecución integral 360°.</p>
+        <p>Nuestra cultura es ágil y apasionada: los creadores trabajan de forma directa con quienes toman las decisiones, y cada pieza del ecosistema visual y comunicacional se cuida con excelencia.</p>
+        <p>El nombre es un guiño a <em>Catch Up</em>: ponerse al día y darle a cada marca el toque que le falta.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS INTERACTIVOS -->
+  <section id="servicios">
+    <div class="wrap">
+      <p class="k rv">Qué hacemos</p>
+      <div class="sec-head rv">
+        <h2>Tres frentes para cubrir todo el universo de tu marca.</h2>
+        <p class="hint">Haz clic en cada servicio para desplegar su alcance y entregables.</p>
+      </div>
+
+      <div class="svc-grid rv" id="svc">
+        <!-- Servicio 1 -->
+        <article class="sv on" data-service="branding">
+          <button type="button" class="sv-trigger" aria-expanded="true" aria-controls="panel-branding">
+            <span class="sv-num">01 · Branding</span>
+            <h3>Arquitectura e Identidad de Marca</h3>
+            <span class="sv-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="sv-body" id="panel-branding">
+            <p>Creamos la esencia visual y verbal de tu negocio desde sus cimientos para construir valor, coherencia y diferenciación real a largo plazo.</p>
+            <ul class="sv-list">
+              <li>Naming estratégico y narrativa verbal</li>
+              <li>Diseño de logotipo, isotipo y sistema gráfico</li>
+              <li>Posicionamiento y arquitectura de portafolio</li>
+              <li>Manuales de identidad corporativa y lineamientos de uso</li>
+            </ul>
+            <button type="button" class="sv-cta open-contact" data-prefill="Arquitectura e Identidad de Marca">Solicitar este servicio →</button>
+          </div>
+        </article>
+
+        <!-- Servicio 2 -->
+        <article class="sv" data-service="campanas">
+          <button type="button" class="sv-trigger" aria-expanded="false" aria-controls="panel-campanas">
+            <span class="sv-num">02 · Campañas 360°</span>
+            <h3>Dirección de Arte y Conceptos Publicitarios</h3>
+            <span class="sv-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="sv-body" id="panel-campanas" hidden>
+            <p>Conceptualizamos campañas integrales y dirigimos su estética en medios digitales, impresos y piezas de alto impacto, manteniendo un mensaje sólido en todos los canales.</p>
+            <ul class="sv-list">
+              <li>Concepto creativo rector y campañas de lanzamiento</li>
+              <li>Dirección de arte para fotografía y producción audiovisual</li>
+              <li>Ecosistema de contenidos y pauta para redes sociales</li>
+              <li>Activaciones y piezas publicitarias multiplataforma</li>
+            </ul>
+            <button type="button" class="sv-cta open-contact" data-prefill="Dirección de Arte y Campañas 360°">Solicitar este servicio →</button>
+          </div>
+        </article>
+
+        <!-- Servicio 3 -->
+        <article class="sv" data-service="packaging">
+          <button type="button" class="sv-trigger" aria-expanded="false" aria-controls="panel-packaging">
+            <span class="sv-num">03 · Packaging y POP</span>
+            <h3>Experiencia Visual de Producto y Punto de Venta</h3>
+            <span class="sv-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="sv-body" id="panel-packaging" hidden>
+            <p>Transformamos el contacto físico con tu marca mediante diseño editorial, empaques y experiencias táctiles que elevan el valor percibido y la preferencia de compra.</p>
+            <ul class="sv-list">
+              <li>Diseño estructural y gráfico de empaques y etiquetas</li>
+              <li>Material POP, exhibidores y ambientación comercial</li>
+              <li>Papelería corporativa y kits de bienvenida</li>
+              <li>Diseño editorial, catálogos y presentaciones ejecutivas</li>
+            </ul>
+            <button type="button" class="sv-cta open-contact" data-prefill="Packaging y Punto de Venta (POP)">Solicitar este servicio →</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPO -->
+  <section class="team" id="equipo">
+    <div class="wrap">
+      <p class="k rv">El equipo</p>
+      <h2 class="rv">Cinco disciplinas, un solo engranaje.</h2>
+      <p class="lead rv">Un modelo horizontal de conexión directa: selecciona a cada integrante para conocer su rol dentro del estudio.</p>
+
+      <div class="crew rv" id="crew">
+        <button type="button" class="m on" aria-expanded="true">
+          <img src="assets/team/ALPEREZ.jpeg" alt="Alejandra Perez - Dirección General y de Crecimiento">
+          <div class="in">
+            <b>Alejandra Perez</b>
+            <em>Dirección General y de Crecimiento</em>
+            <p>Lidera la visión empresarial y la expansión comercial, y consolida alianzas que impulsan la rentabilidad y el éxito de cada aliado.</p>
+          </div>
+        </button>
+
+        <button type="button" class="m" aria-expanded="false">
+          <img src="assets/team/JHMORA.jpeg" alt="Jherardine Mora - Dirección Creativa y de Arte">
+          <div class="in">
+            <b>Jherardine Mora</b>
+            <em>Dirección Creativa y de Arte</em>
+            <p>Encabeza la vanguardia estética y conceptual para que cada pieza alcance un estándar visual impecable y una identidad memorable.</p>
+          </div>
+        </button>
+
+        <button type="button" class="m" aria-expanded="false">
+          <img src="assets/team/MJPEYONI.jpeg" alt="Maria Jose Peyoni - Estrategia de Marca y Planificación Publicitaria">
+          <div class="in">
+            <b>Maria Jose Peyoni</b>
+            <em>Estrategia de Marca y Planificación Publicitaria</em>
+            <p>Investiga el mercado, identifica oportunidades, define los mensajes clave y estructura el plan 360° para asegurar resultados comerciales.</p>
+          </div>
+        </button>
+
+        <button type="button" class="m" aria-expanded="false">
+          <img src="assets/team/GAMUSHART.jpeg" alt="Gabriela Mushart - Diseño Gráfico, Identidad Visual y Entornos Digitales (UI/UX)">
+          <div class="in">
+            <b>Gabriela Mushart</b>
+            <em>Diseño Gráfico, Identidad Visual y Entornos Digitales (UI/UX)</em>
+            <p>Traduce estrategias y conceptos en sistemas visuales tangibles: logotipos, empaques, papelería y experiencias digitales de alto impacto.</p>
+          </div>
+        </button>
+
+        <button type="button" class="m" aria-expanded="false">
+          <img src="assets/team/MJBELISARIO.jpeg" alt="Maria Jose Belisario - Gestión de Cuentas y Experiencia del Aliado (CX)">
+          <div class="in">
+            <b>Maria Jose Belisario</b>
+            <em>Gestión de Cuentas y Experiencia del Aliado (CX)</em>
+            <p>Sostiene una comunicación transparente, ágil y empática, para una ejecución impecable y una vivencia memorable junto a cada aliado.</p>
+          </div>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISIÓN, VISIÓN Y VALORES -->
+  <section class="ident" id="identidad">
+    <div class="wrap">
+      <p class="k rv">Misión y valores</p>
+      <h2 class="rv">Lo que nos mueve y hacia dónde vamos.</h2>
+      <div class="tabs rv" role="tablist">
+        <button type="button" role="tab" aria-selected="true" data-p="mis">Misión</button>
+        <button type="button" role="tab" aria-selected="false" data-p="vis">Visión</button>
+      </div>
+      <div class="panel" id="mis" role="tabpanel">Potenciar el éxito comercial y el posicionamiento de cada aliado, fusionando estrategia y ejecución, y conectando el talento creador con el liderazgo de cada organización.</div>
+      <div class="panel" id="vis" role="tabpanel" hidden>Trascender fronteras como el estudio creativo de referencia global que redefine el futuro visual, cultural y comercial de las marcas líderes del mundo.</div>
+      <div class="vals rv">
+        <div><h3>Integridad</h3><p>Coherencia absoluta entre lo que pensamos, prometemos y entregamos.</p></div>
+        <div><h3>Conexión humana</h3><p>Cercanía empática que une a creadores y líderes.</p></div>
+        <div><h3>Creatividad</h3><p>Soluciones audaces que rompen esquemas y redefinen el futuro.</p></div>
+        <div><h3>Excelencia</h3><p>Rigor estético y estratégico para honrar cada visión.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OBJETIVO Y METAS -->
+  <section class="goals" id="metas">
+    <div class="wrap">
+      <p class="k rv">Objetivo y metas</p>
+      <h2 class="rv">Ser la agencia creativa de referencia en la región central.</h2>
+      <p class="big rv">Consolidar a KetchUp! Estudio en Valencia, Carabobo, con relaciones de valor a largo plazo y resultados tangibles que demuestren cómo «El ingrediente secreto» impulsa la rentabilidad de las marcas.</p>
+      <div class="steps">
+        <div class="step rv">
+          <h3>Corto plazo</h3>
+          <p>Posicionar nuestra propuesta en Valencia y la región central con soluciones reales y memorables de identidad y comunicación 360°, desarrolladas junto a nuestros aliados.</p>
+        </div>
+        <div class="step rv">
+          <h3>Mediano plazo</h3>
+          <p>Consolidar vínculos estables y duraderos, como el equipo creativo de confianza, integrado al crecimiento de las empresas líderes de la región central.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CIERRE / CTA HABLEMOS -->
+  <section class="close" id="hablemos">
+    <div class="wrap">
+      <p class="close-slogan rv">El ingrediente secreto</p>
+      <h2 class="rv">Una marca memorable no nace por casualidad.</h2>
+      <p class="q rv">Se construye con estrategia, carácter y <strong>El ingrediente secreto</strong> de nuestra agencia. Nos unimos a tu equipo para transformar tu visión en un impacto real y sostenible.</p>
+      <button type="button" class="btn rv open-contact" id="btnHablemosMain">Hablemos de lo que podemos lograr</button>
+
+      <!-- FORMULARIO DESPLEGABLE HABLEMOS -->
+      <div class="contact-drawer" id="contactDrawer" hidden>
+        <div class="contact-card">
+          <div class="contact-card-head">
+            <div>
+              <span class="form-badge">Briefing Inicial · KetchUp! Estudio</span>
+              <h3>Cuéntanos sobre tu marca</h3>
+              <p>Completa los campos obligatorios (*) para agendar nuestra primera sesión de trabajo.</p>
+            </div>
+            <button type="button" class="close-drawer" id="closeDrawer" aria-label="Cerrar formulario">✕</button>
+          </div>
+
+          <!-- IMPORTANTE: Reemplaza TU_ID_DE_FORMSPREE con el código que te dará Formspree.io (ver Guía paso a paso) -->
+          <form id="hablemosForm" action="https://formspree.io/f/TU_ID_DE_FORMSPREE" method="POST" novalidate>
+            <fieldset class="form-group-block">
+              <legend>1. Datos de la empresa</legend>
+              <div class="form-grid-2">
+                <div class="field">
+                  <label for="empresa">Nombre de la empresa *</label>
+                  <input type="text" id="empresa" name="empresa" placeholder="Ej. Inversiones El Sol C.A." required>
+                  <span class="err-msg"></span>
+                </div>
+                <div class="field">
+                  <label for="rif">RIF *</label>
+                  <input type="text" id="rif" name="rif" placeholder="Ej. J-12345678-9" required>
+                  <span class="err-msg"></span>
+                </div>
+                <div class="field">
+                  <label for="representante">Nombre del representante legal *</label>
+                  <input type="text" id="representante" name="representante" placeholder="Nombre y apellido" required>
+                  <span class="err-msg"></span>
+                </div>
+                <div class="field">
+                  <label for="telefono">Número de teléfono *</label>
+                  <input type="tel" id="telefono" name="telefono" placeholder="Ej. +58 412 000 0000" required>
+                  <span class="err-msg"></span>
+                </div>
+                <div class="field full">
+                  <label for="email">Correo electrónico *</label>
+                  <input type="email" id="email" name="email" placeholder="contacto@tuempresa.com" required>
+                  <span class="err-msg"></span>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-group-block">
+              <legend>2. Necesidades del cliente</legend>
+              <div class="form-grid-1">
+                <div class="field">
+                  <label for="servicio">¿Qué servicio le interesa? *</label>
+                  <select id="servicio" name="servicio" required>
+                    <option value="">Selecciona una opción...</option>
+                    <option value="Arquitectura e Identidad de Marca">Arquitectura e Identidad de Marca (Branding)</option>
+                    <option value="Dirección de Arte y Campañas 360°">Dirección de Arte y Conceptos Publicitarios 360°</option>
+                    <option value="Packaging y Punto de Venta (POP)">Experiencia Visual de Producto y Punto de Venta (Packaging / POP)</option>
+                    <option value="Gestión Integral / Varios Servicios">Propuesta Integral 360° (Varios servicios)</option>
+                  </select>
+                  <span class="err-msg"></span>
+                </div>
+                <div class="field">
+                  <label for="necesidad">¿Qué busca o necesita para su empresa? *</label>
+                  <textarea id="necesidad" name="necesidad" rows="3" placeholder="Describe brevemente la situación actual de tu marca o proyecto..." required></textarea>
+                  <span class="err-msg"></span>
+                </div>
+                <div class="field">
+                  <label for="objetivo">¿Qué desea lograr con nuestra agencia? *</label>
+                  <textarea id="objetivo" name="objetivo" rows="3" placeholder="Ej. Posicionar un nuevo producto, renovar identidad, aumentar ventas..." required></textarea>
+                  <span class="err-msg"></span>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-group-block">
+              <legend>3. Modalidad de reunión *</legend>
+              <div class="radio-cards" id="modalidadGroup">
+                <label class="radio-card">
+                  <input type="radio" name="modalidad" value="Reunión presencial (Valencia, Carabobo)" required>
+                  <span class="rc-box">
+                    <strong>Reunión presencial</strong>
+                    <small>En Valencia, Carabobo o sede de tu empresa</small>
+                  </span>
+                </label>
+                <label class="radio-card">
+                  <input type="radio" name="modalidad" value="Reunión online (Google Meet / Zoom)" required>
+                  <span class="rc-box">
+                    <strong>Reunión online</strong>
+                    <small>Videollamada vía Google Meet o Zoom</small>
+                  </span>
+                </label>
+              </div>
+              <span class="err-msg" id="modalidadErr"></span>
+            </fieldset>
+
+            <div class="form-footer">
+              <button type="submit" class="btn submit-btn" id="submitBtn">Enviar solicitud</button>
+              <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <p class="note rv">Aliados: estar en el mismo equipo, caminar hombro a hombro y construir juntos. Con esta palabra no hay distancia ni jerarquía comercial; son socios reales que comparten el propósito y celebran cada éxito.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img class="brand-logo footer-logo" src="assets/brand/logo-principal.png" alt="KetchUp! Estudio">
+    <span>El ingrediente secreto · Valencia, Carabobo</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
