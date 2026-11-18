@@ -1,0 +1,11 @@
+/* Ajustes fase 3 (se carga después de styles.css) */
+/* tarjeta blanca: logo más grande y centrado (reemplaza el desplazamiento y escala anteriores) */
+.card.c3{display:flex;align-items:center;justify-content:center}
+.card.c3 img{width:86%;height:auto;max-width:none;object-fit:contain;transform:none}
+/* el bloque del equipo siempre visible aunque la animación de entrada no se dispare */
+.crew.rv{opacity:1;transform:none}
+/* redes sociales sin enlace configurado: se muestran sin acción */
+.social-card.soc-off{cursor:default}
+.social-card.soc-off:hover{transform:none;border-color:var(--line);box-shadow:none}
+.social-card.soc-off:hover .sc-icon{background:color-mix(in srgb,var(--red) 12%,transparent);color:var(--red)}
+.social-card.soc-off .sc-arrow{visibility:hidden}
