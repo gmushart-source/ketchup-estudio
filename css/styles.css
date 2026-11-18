@@ -73,10 +73,12 @@ a {
 }
 
 .brand-logo {
-  height: 54px;
+  height: 82px;
   width: auto;
   display: block;
   object-fit: contain;
+  transform: scale(1.38);
+  transform-origin: left center;
 }
 
 /* Convierte automáticamente la palabra negra "Estudio" en blanco sobre fondos oscuros sin alterar el rojo ni la forma original */
