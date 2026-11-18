@@ -342,11 +342,11 @@ nav a.on::after {
 }
 
 .c3 img {
-  width: 100%;
-  height: 100%;
+  width: 92%;
+  height: 92%;
   object-fit: contain;
   display: block;
-  transform: translateY(-13%) scale(1.24);
+  transform: translateY(-13%) scale(1.22);
 }
 
 .stage:hover .c1 {
