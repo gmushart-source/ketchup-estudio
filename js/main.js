@@ -1,4 +1,14 @@
 (function () {
+  // 0. Respaldo automático de rutas para las fotos del equipo
+  document.querySelectorAll('#crew img').forEach(function (img) {
+    img.addEventListener('error', function () {
+      var altSrc = img.getAttribute('data-alt-src');
+      if (altSrc && img.getAttribute('src') !== altSrc) {
+        img.setAttribute('src', altSrc);
+      }
+    });
+  });
+
   // 1. Acordeón interactivo de Servicios (solo uno abierto a la vez)
   var serviceCards = [].slice.call(document.querySelectorAll('#svc .sv'));
   serviceCards.forEach(function (card) {
@@ -140,7 +150,7 @@
       var actionUrl = form.getAttribute('action') || '';
       if (actionUrl.indexOf('TU_ID_DE_FORMSPREE') !== -1) {
         statusBox.className = 'form-status warn';
-        statusBox.innerHTML = 'Validación correcta, pero <strong>aún falta conectar el correo receptor</strong>: crea tu formulario gratuito en <a href="https://formspree.io" target="_blank" rel="noopener">formspree.io</a> y pega tu ID en el atributo <code>action</code> del archivo <code>index.html</code> (ver paso 5 de la guía).';
+        statusBox.innerHTML = 'Validación correcta, pero <strong>aún falta conectar el correo receptor</strong>: crea tu formulario gratuito en <a href="https://formspree.io" target="_blank" rel="noopener">formspree.io</a> y pega tu ID en el atributo <code>action</code> del archivo <code>index.html</code>.';
         return;
       }
 
