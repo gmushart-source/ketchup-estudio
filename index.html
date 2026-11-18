@@ -8,14 +8,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800;900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=35">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
 <header>
   <div class="wrap">
     <a class="logo-link" href="#inicio" aria-label="KetchUp! Estudio, inicio">
-      <img class="brand-logo" src="assets/brand/logo-horizontal.png" alt="KetchUp! Estudio">
+      <img class="brand-logo" src="assets/brand/logo-principal.png" alt="KetchUp! Estudio">
     </a>
     <nav aria-label="Principal">
       <a href="#nosotros">Quiénes somos</a>
@@ -93,6 +93,7 @@
       </div>
 
       <div class="svc-grid rv" id="svc">
+        <!-- Servicio 1 -->
         <article class="sv on" data-service="branding">
           <button type="button" class="sv-trigger" aria-expanded="true" aria-controls="panel-branding">
             <span class="sv-num">01 · Branding</span>
@@ -111,6 +112,7 @@
           </div>
         </article>
 
+        <!-- Servicio 2 -->
         <article class="sv" data-service="campanas">
           <button type="button" class="sv-trigger" aria-expanded="false" aria-controls="panel-campanas">
             <span class="sv-num">02 · Campañas 360°</span>
@@ -129,6 +131,7 @@
           </div>
         </article>
 
+        <!-- Servicio 3 -->
         <article class="sv" data-service="packaging">
           <button type="button" class="sv-trigger" aria-expanded="false" aria-controls="panel-packaging">
             <span class="sv-num">03 · Packaging y POP</span>
@@ -159,7 +162,7 @@
 
       <div class="crew rv" id="crew">
         <button type="button" class="m on" aria-expanded="true">
-          <img src="./assets/team/alejandra.jpeg" data-member="alejandra" alt="Alejandra Perez - Dirección General y de Crecimiento">
+          <img src="assets/team/alejandra.jpeg" alt="Alejandra Perez - Dirección General y de Crecimiento">
           <div class="in">
             <b>Alejandra Perez</b>
             <em>Dirección General y de Crecimiento</em>
@@ -168,7 +171,7 @@
         </button>
 
         <button type="button" class="m" aria-expanded="false">
-          <img src="./assets/team/jherardine.jpeg" data-member="jherardine" alt="Jherardine Mora - Dirección Creativa y de Arte">
+          <img src="assets/team/jherardine.jpeg" alt="Jherardine Mora - Dirección Creativa y de Arte">
           <div class="in">
             <b>Jherardine Mora</b>
             <em>Dirección Creativa y de Arte</em>
@@ -177,7 +180,7 @@
         </button>
 
         <button type="button" class="m" aria-expanded="false">
-          <img src="./assets/team/peyoni.jpeg" data-member="peyoni" alt="Maria Jose Peyoni - Estrategia de Marca y Planificación Publicitaria">
+          <img src="assets/team/peyoni.jpeg" alt="Maria Jose Peyoni - Estrategia de Marca y Planificación Publicitaria">
           <div class="in">
             <b>Maria Jose Peyoni</b>
             <em>Estrategia de Marca y Planificación Publicitaria</em>
@@ -186,7 +189,7 @@
         </button>
 
         <button type="button" class="m" aria-expanded="false">
-          <img src="./assets/team/gabriela.jpeg" data-member="gabriela" alt="Gabriela Mushart - Diseño Gráfico, Identidad Visual y Entornos Digitales (UI/UX)">
+          <img src="assets/team/gabriela.jpeg" alt="Gabriela Mushart - Diseño Gráfico, Identidad Visual y Entornos Digitales (UI/UX)">
           <div class="in">
             <b>Gabriela Mushart</b>
             <em>Diseño Gráfico, Identidad Visual y Entornos Digitales (UI/UX)</em>
@@ -195,7 +198,7 @@
         </button>
 
         <button type="button" class="m" aria-expanded="false">
-          <img src="./assets/team/belisario.jpeg" data-member="belisario" alt="Maria Jose Belisario - Gestión de Cuentas y Experiencia del Aliado (CX)">
+          <img src="assets/team/belisario.jpeg" alt="Maria Jose Belisario - Gestión de Cuentas y Experiencia del Aliado (CX)">
           <div class="in">
             <b>Maria Jose Belisario</b>
             <em>Gestión de Cuentas y Experiencia del Aliado (CX)</em>
@@ -245,17 +248,127 @@
     </div>
   </section>
 
-  <!-- REDES SOCIALES -->
-  <section class="socials" id="redes">
+  <!-- CIERRE / CTA HABLEMOS -->
+  <section class="close" id="hablemos">
     <div class="wrap">
-      <div class="socials-head rv">
-        <div>
-          <p class="k">Comunidad y portafolio</p>
-          <h2>Síguenos y descubre nuestra receta creativa.</h2>
+      <p class="close-slogan rv">El ingrediente secreto</p>
+      <h2 class="rv">Una marca memorable no nace por casualidad.</h2>
+      <p class="q rv">Se construye con estrategia, carácter y <strong>El ingrediente secreto</strong> de nuestra agencia. Nos unimos a tu equipo para transformar tu visión en un impacto real y sostenible.</p>
+      <button type="button" class="btn rv open-contact" id="btnHablemosMain">Hablemos de lo que podemos lograr</button>
+
+      <!-- FORMULARIO DESPLEGABLE HABLEMOS -->
+      <div class="contact-drawer" id="contactDrawer" hidden>
+        <div class="contact-card">
+          <div class="contact-card-head">
+            <div>
+              <span class="form-badge">Briefing Inicial · KetchUp! Estudio</span>
+              <h3>Cuéntanos sobre tu marca</h3>
+              <p>Completa los campos obligatorios (*) para agendar nuestra primera sesión de trabajo.</p>
+            </div>
+            <button type="button" class="close-drawer" id="closeDrawer" aria-label="Cerrar formulario">✕</button>
+          </div>
+
+          <!-- IMPORTANTE: Reemplaza TU_ID_DE_FORMSPREE con el código que te dará Formspree.io (ver Guía paso a paso) -->
+          <form id="hablemosForm" action="https://formspree.io/f/TU_ID_DE_FORMSPREE" method="POST" novalidate>
+            <fieldset class="form-group-block">
+              <legend>1. Datos de la empresa</legend>
+              <div class="form-grid-2">
+                <div class="field">
+                  <label for="empresa">Nombre de la empresa *</label>
+                  <input type="text" id="empresa" name="empresa" placeholder="Ej. Inversiones El Sol C.A." required>
+                  <span class="err-msg"></span>
+                </div>
+                <div class="field">
+                  <label for="rif">RIF *</label>
+                  <input type="text" id="rif" name="rif" placeholder="Ej. J-12345678-9" required>
+                  <span class="err-msg"></span>
+                </div>
+                <div class="field">
+                  <label for="representante">Nombre del representante legal *</label>
+                  <input type="text" id="representante" name="representante" placeholder="Nombre y apellido" required>
+                  <span class="err-msg"></span>
+                </div>
+                <div class="field">
+                  <label for="telefono">Número de teléfono *</label>
+                  <input type="tel" id="telefono" name="telefono" placeholder="Ej. +58 412 000 0000" required>
+                  <span class="err-msg"></span>
+                </div>
+                <div class="field full">
+                  <label for="email">Correo electrónico *</label>
+                  <input type="email" id="email" name="email" placeholder="contacto@tuempresa.com" required>
+                  <span class="err-msg"></span>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-group-block">
+              <legend>2. Necesidades del cliente</legend>
+              <div class="form-grid-1">
+                <div class="field">
+                  <label for="servicio">¿Qué servicio le interesa? *</label>
+                  <select id="servicio" name="servicio" required>
+                    <option value="">Selecciona una opción...</option>
+                    <option value="Arquitectura e Identidad de Marca">Arquitectura e Identidad de Marca (Branding)</option>
+                    <option value="Dirección de Arte y Campañas 360°">Dirección de Arte y Conceptos Publicitarios 360°</option>
+                    <option value="Packaging y Punto de Venta (POP)">Experiencia Visual de Producto y Punto de Venta (Packaging / POP)</option>
+                    <option value="Gestión Integral / Varios Servicios">Propuesta Integral 360° (Varios servicios)</option>
+                  </select>
+                  <span class="err-msg"></span>
+                </div>
+                <div class="field">
+                  <label for="necesidad">¿Qué busca o necesita para su empresa? *</label>
+                  <textarea id="necesidad" name="necesidad" rows="3" placeholder="Describe brevemente la situación actual de tu marca o proyecto..." required></textarea>
+                  <span class="err-msg"></span>
+                </div>
+                <div class="field">
+                  <label for="objetivo">¿Qué desea lograr con nuestra agencia? *</label>
+                  <textarea id="objetivo" name="objetivo" rows="3" placeholder="Ej. Posicionar un nuevo producto, renovar identidad, aumentar ventas..." required></textarea>
+                  <span class="err-msg"></span>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-group-block">
+              <legend>3. Modalidad de reunión *</legend>
+              <div class="radio-cards" id="modalidadGroup">
+                <label class="radio-card">
+                  <input type="radio" name="modalidad" value="Reunión presencial (Valencia, Carabobo)" required>
+                  <span class="rc-box">
+                    <strong>Reunión presencial</strong>
+                    <small>En Valencia, Carabobo o sede de tu empresa</small>
+                  </span>
+                </label>
+                <label class="radio-card">
+                  <input type="radio" name="modalidad" value="Reunión online (Google Meet / Zoom)" required>
+                  <span class="rc-box">
+                    <strong>Reunión online</strong>
+                    <small>Videollamada vía Google Meet o Zoom</small>
+                  </span>
+                </label>
+              </div>
+              <span class="err-msg" id="modalidadErr"></span>
+            </fieldset>
+
+            <div class="form-footer">
+              <button type="submit" class="btn submit-btn" id="submitBtn">Enviar solicitud</button>
+              <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            </div>
+          </form>
         </div>
-        <p class="socials-sub">Conecta con el equipo de KetchUp! Estudio en nuestras plataformas oficiales.</p>
       </div>
 
-      <div class="social-grid rv">
-        <a class="social-card" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram oficial @ketchup!">
-          <div class="sc-icon" aria-
+      <p class="note rv">Aliados: estar en el mismo equipo, caminar hombro a hombro y construir juntos. Con esta palabra no hay distancia ni jerarquía comercial; son socios reales que comparten el propósito y celebran cada éxito.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img class="brand-logo footer-logo" src="assets/brand/logo-principal.png" alt="KetchUp! Estudio">
+    <span>El ingrediente secreto · Valencia, Carabobo</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
