@@ -18,3 +18,7 @@
   .crew .m p,.crew .m.on p{max-height:none;opacity:1;margin-top:.7rem;transition:none}
   .crew .m.on::before{display:none}
 }
+
+/* texto "KetchUp!" en rojo de marca */
+.kr{color:var(--red)}
+.close .kr{color:inherit}
