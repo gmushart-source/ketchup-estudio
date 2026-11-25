@@ -22,3 +22,10 @@
 /* texto "KetchUp!" en rojo de marca */
 .kr{color:var(--red)}
 .close .kr{color:inherit}
+
+/* TÍTULO DEL INICIO */
+.hero h1{font-size:clamp(2rem,5vw,4.4rem)}
+.hero h1 span:nth-child(4) i{animation-delay:.36s}
+@media (max-width:900px){
+  .hero h1{font-size:clamp(2rem,9vw,3.8rem)}
+}
