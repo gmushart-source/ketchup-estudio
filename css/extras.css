@@ -29,3 +29,7 @@
 @media (max-width:900px){
   .hero h1{font-size:clamp(2rem,9vw,3.8rem)}
 }
+/* En pantallas verticales (celular), el inicio no ocupa toda la altura */
+@media (orientation: portrait){
+  .hero{min-height:auto}
+}
